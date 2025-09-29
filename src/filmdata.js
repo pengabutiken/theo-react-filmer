@@ -69,7 +69,7 @@ const filmer = [
         title: "The Godfather Part II",
         year: 1974,
         director: "Francis Ford Coppola",
-        plot: "The rise of a young mobster parallels his son’s struggles to maintain power and family loyalty, revealing ambition, betrayal, and corruption."
+        plot: " The rise of a young mobster parallels his son’s struggles to maintain power and family loyalty, revealing ambition, betrayal, and corruption."
 
     }
 
