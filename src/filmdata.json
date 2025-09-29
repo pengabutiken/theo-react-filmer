@@ -4,7 +4,8 @@
         "title": "The Master",
         "year": 2012,
         "director": "Paul Thomas Anderson",
-        "plot": "A troubled WWII veteran becomes entangled with a charismatic cult leader, exploring power, faith, and human connection."
+        "plot": "A troubled WWII veteran becomes entangled with a charismatic cult leader, exploring power, faith, and human connection.",
+        "poster": "/images/the-master.png"
     },
     {
         "id": 2,
