@@ -1,21 +1,21 @@
 [
     {
         "id": 1,
-        "titel": "The Master",
+        "title": "The Master",
         "year": 2012,
         "director": "Paul Thomas Anderson",
         "plot": "A troubled WWII veteran becomes entangled with a charismatic cult leader, exploring power, faith, and human connection."
     },
     {
         "id": 2,
-        "titel": "Through a Glass Darkly",
+        "title": "Through a Glass Darkly",
         "year": 1961,
         "director": "Ingmar Bergman",
         "plot": "A young woman’s struggle with schizophrenia during a family vacation exposes fragile bonds and hidden tensions."
     },
     {
         "id": 3,
-        "titel": "Laurence Anyways",
+        "title": "Laurence Anyways",
         "year": 2012,
         "director": "Xavier Dolan",
         "plot": "A transgender woman’s decade-long journey of self-discovery and love strains her most important relationship."
