@@ -12,62 +12,72 @@
         "title": "Through a Glass Darkly",
         "year": 1961,
         "director": "Ingmar Bergman",
-        "plot": "A young woman’s struggle with schizophrenia during a family vacation exposes fragile bonds and hidden tensions."
+        "plot": "A young woman’s struggle with schizophrenia during a family vacation exposes fragile bonds and hidden tensions.",
+        "poster": "/images/through-a-glass.jpg"
+
     },
     {
         "id": 3,
         "title": "Laurence Anyways",
         "year": 2012,
         "director": "Xavier Dolan",
-        "plot": "A transgender woman’s decade-long journey of self-discovery and love strains her most important relationship."
+        "plot": "A transgender woman’s decade-long journey of self-discovery and love strains her most important relationship.",
+        "poster": "/images/laurence.jpg"
     },
     {
         "id": 4,
         "title": "Chungking Express",
         "year": 1994,
         "director": "Wong Kar-Wai",
-        "plot": "Two lonely policemen in Hong Kong cross paths with a mysterious smuggler and a quirky snack bar worker, finding fleeting connections in the city’s restless nights."
+        "plot": "Two lonely policemen in Hong Kong cross paths with a mysterious smuggler and a quirky snack bar worker, finding fleeting connections in the city’s restless nights.",
+        "poster": "/images/chungking.jpg"
     },
     {
         "id": 5,
         "title": "Punch-Drunk Love",
         "year": 2002,
         "director": "Paul Thomas Anderson",
-        "plot": "A socially anxious man with a violent streak finds unexpected love while struggling against manipulation and his own bottled-up rage."
+        "plot": "A socially anxious man with a violent streak finds unexpected love while struggling against manipulation and his own bottled-up rage.",
+        "poster": "/images/punch-drunk.jpg"
     },
     {
         "id": 6,
         "title": "Pulse",
         "year": 2001,
         "director": "Kyoshi Kurosawa",
-        "plot": "Lonely strangers confront a mysterious force spreading through technology, blurring the line between the living and the dead."
+        "plot": "Lonely strangers confront a mysterious force spreading through technology, blurring the line between the living and the dead.",
+        "poster": "/images/Pulse.jpg"
     },
     {
         "id": 7,
         "title": "Barry Lyndon",
         "year": 1975,
         "director": "Stanley Kubrick",
-        "plot": "An ambitious Irishman schemes and fights his way through 18th-century Europe, rising into aristocracy before pride and misfortune lead to his downfall."
+        "plot": "An ambitious Irishman schemes and fights his way through 18th-century Europe, rising into aristocracy before pride and misfortune lead to his downfall.",
+        "poster": "/images/barry-lyndon-0-13-56.jpg"
     },
     {
         "id": 8,
         "title": "Nashville",
         "year": 1975,
         "director": "Robert Altman",
-        "plot": "Interwoven lives of musicians, politicians, and dreamers in 1970s Nashville paint a sprawling portrait of American ambition and disillusionment."
+        "plot": "Interwoven lives of musicians, politicians, and dreamers in 1970s Nashville paint a sprawling portrait of American ambition and disillusionment.",
+        "poster": "/images/Nashville-m.jpg"
     },
     {
         "id": 9,
         "title": "De Ofrivilliga",
         "year": 2008,
         "director": "Ruben Östlund",
-        "plot": "Ordinary people face escalating social tensions and moral dilemmas, exposing the darkly absurd side of human behavior."
+        "plot": "Ordinary people face escalating social tensions and moral dilemmas, exposing the darkly absurd side of human behavior.",
+        "poster": "/images/ofrig.jpg"
     },
     {
         "id": 10,
         "title": "The Godfather Part II",
         "year": 1974,
         "director": "Francis Ford Coppola",
-        "plot": "The rise of a young mobster parallels his son’s struggles to maintain power and family loyalty, revealing ambition, betrayal, and corruption."
+        "plot": "The rise of a young mobster parallels his son’s struggles to maintain power and family loyalty, revealing ambition, betrayal, and corruption.",
+        "poster": "/images/godfather2.jpg"
     }
 ]
