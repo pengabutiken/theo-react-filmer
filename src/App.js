@@ -6,11 +6,11 @@ function App() {
   filmdata.forEach((film) => {
     filmer.push(
       <div class="filmcontainer">
+        <img class="bild" alt="filmbild" key={film.id} src={film.poster}></img>
         <h2 class="titel" key={film.id}>
-          {film.title} <i class="year">{film.year}</i>{" "}
+         {film.id}. {film.title}, <i class="year">({film.year})</i>
         </h2>
 
-        <img class="bild" alt="filmbild" key={film.id} src={film.poster}></img>
         <p class="plot" key={film.id}>
           {film.plot}
         </p>
@@ -21,7 +21,7 @@ function App() {
     <div className="min-h-screen bg-gray-100 font-sans">
       <header className=" top-0 bg-gradient-to-r from-gray-950 to-black shadow-2xl p-4 sm:p-6 mb-10 z-10 flex items-center justify-between border-b border-gray-700">
         <h1 className="text-xl sm:text-2xl font-black text-white drop-shadow-lg tracking-tight truncate font-prata">
-          en databas av filmer
+          a database of Theo's favorite movies, stored in various ways
         </h1>
         <div className="flex space-x-3 flex-shrink-0 justify-end">
           <button className="px-3 py-1 text-sm sm:px-4 sm:py-2  font-prata rounded-lg bg-transparent   text-white  transition shadow-md whitespace-nowrap hover:bg-white/10">
