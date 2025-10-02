@@ -3,8 +3,9 @@ body {
     flex-wrap: wrap;
 }
 
-
-
+.titel{  
+    font-family: "Prata", serif;
+}
 .plot {
     
     font-weight: 600;
