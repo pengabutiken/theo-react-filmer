@@ -1,17 +1,24 @@
 body {
-    display: flex;
-    flex-wrap: wrap;
+   
+}
+.filmcontainer{
+    border: 1px black solid;
+    width: 100%;
 }
 
 .titel{  
     font-family: "Prata", serif;
 }
 .plot {
-    
-    font-weight: 600;
+      font-family: "Prata", serif;
+    font-size: large;
 }
 
-img {
-    width: 50px;
-    height: 50px;
+.bild {
+    width: 50%;
+    height: 30em;
+}
+.year{
+    font-weight:400;
+    
 }

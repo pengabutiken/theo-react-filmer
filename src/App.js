@@ -5,11 +5,14 @@ import filmdata from './filmdata.json'
 
 function App() {
 
+  
+
+
   const filmer = [];
   filmdata.forEach(film => {
     filmer.push(<div class="filmcontainer">
-      <h2 class="titel" key={film.id}>{film.title}</h2>
-      <h3 class="year"key={film.id}>{film.year}</h3>
+      <h2 class="titel" key={film.id}>{film.title}    <i class='year'>{film.year}</i> </h2>
+     
       <img class="bild" alt='filmbild' key={film.id} src={film.poster}></img>
       <p class="plot" key={film.id}>{film.plot}</p>
     </div>
@@ -18,7 +21,9 @@ function App() {
   });
   return (
 
-    <div> {filmer}</ div>
+    <div> 
+      {filmer}
+      </ div>
 
 
 
