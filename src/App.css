@@ -8,16 +8,23 @@ body {
 
 .titel{  
     font-family: "Prata", serif;
-    font-size:4rem;
+    font-size:3.5rem;
 }
 .plot {
       font-family: "Prata", serif;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
+}
+.director{
+    font-family: "Prata",serif;
+    font-style: oblique;
+    font-size: 1rem;
+    text-align: center;
 }
 
 .bild {
     width:100%;
-    height: 35rem;
+    height: 32rem;
+    margin-top: 30px;
 }
 .year{
     font-weight:400;
