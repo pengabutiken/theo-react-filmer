@@ -1,5 +1,6 @@
 import "./App.css";
 import filmdata from "./filmdata.json";
+import { Link } from "react-router-dom";
 
 function App() {
   const filmer = [];
@@ -27,9 +28,12 @@ function App() {
           <span className=" text-green-400">json</span>
         </h1>
         <div className="flex space-x-3 flex-shrink-0 justify-end">
-          <button className="px-3 py-1 text-sm sm:px-4 sm:py-2  font-prata rounded-lg bg-transparent   text-purple-400  transition shadow-md whitespace-nowrap hover:bg-white/10">
-            API
-          </button>
+         <Link
+  to="/Api"
+  className="px-3 py-1 text-sm sm:px-4 sm:py-2 font-prata rounded-lg bg-transparent text-purple-400 transition shadow-md whitespace-nowrap hover:bg-white/10"
+>
+  API
+</Link>
           <button className="px-3 py-1 text-sm sm:px-4 sm:py-2 rounded-lg bg-transparent b text-red-300 font-prata transition shadow-md whitespace-nowrap hidden sm:inline-block hover:bg-white/10">
             Database
           </button>
