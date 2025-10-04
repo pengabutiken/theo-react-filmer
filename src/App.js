@@ -14,7 +14,7 @@ function App() {
           {film.plot}
         </p>
         <p class="director" key={film.director}>
-          By: {film.director}{" "}
+          directed by {film.director}{" "}
         </p>
       </div>
     );

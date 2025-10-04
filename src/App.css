@@ -1,6 +1,4 @@
-body {
-   
-}
+
 .filmcontainer{
     
     width: 100%;
@@ -15,10 +13,11 @@ body {
     font-size: 1.3rem;
 }
 .director{
-    font-family: "Prata",serif;
+    font-family: "Tangerine",serif;
     font-style: oblique;
-    font-size: 1rem;
+    font-size: 2rem;
     text-align: center;
+    font-weight: 900;
 }
 
 .bild {
@@ -29,4 +28,77 @@ body {
 .year{
     font-weight:400;
     
+}
+        
+@media (max-width: 640px) {
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  * {
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+
+  .filmcontainer {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .titel {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .plot {
+    font-size: 1rem;
+    padding: 0 10px;
+    text-align: justify;
+  }
+
+  .director {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .bild {
+    height: auto;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  
+  header {
+    flex-direction: column !important;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  header h1 {
+    font-size: 1rem;
+    line-height: 1.4;
+    white-space: normal !important; 
+    overflow: visible !important;
+    text-overflow: unset !important;
+    word-wrap: break-word;
+    width: 100%;
+    max-width: 90%;
+  }
+
+  header .flex {
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  header .hidden {
+    display: inline-block !important;
+  }
+
+  header button {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+  }
 }
