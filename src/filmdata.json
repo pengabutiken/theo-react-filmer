@@ -4,7 +4,7 @@
         "title": "The Master",
         "year": 2012,
         "director": "Paul Thomas Anderson",
-        "plot": "A troubled WWII veteran becomes entangled with a charismatic cult leader, exploring power, faith, and human connection.",
+        "plot": "A troubled WWII veteran becomes entangled with a charismatic cult leader, exploring power, faith, and human connection. As their relationship deepens, the boundaries between devotion and manipulation blur, leading to an intense struggle for control and redemption.",
         "poster": "/images/the-master.png"
     },
     {
@@ -12,16 +12,15 @@
         "title": "Through a Glass Darkly",
         "year": 1961,
         "director": "Ingmar Bergman",
-        "plot": "A young woman’s struggle with schizophrenia during a family vacation exposes fragile bonds and hidden tensions.",
+        "plot": "A young woman’s struggle with schizophrenia during a family vacation exposes fragile bonds and hidden tensions. As her delusions intensify, the family is forced to confront their own emotional distance, love, and helplessness in the face of mental illness.",
         "poster": "/images/through-a-glass.jpg"
-
     },
     {
         "id": 3,
         "title": "Laurence Anyways",
         "year": 2012,
         "director": "Xavier Dolan",
-        "plot": "A transgender woman’s decade-long journey of self-discovery and love strains her most important relationship.",
+        "plot": "A transgender woman’s decade-long journey of self-discovery and love strains her most important relationship. Through the changing tides of identity, society, and time, Laurence and her partner wrestle with what it means to truly love someone beyond gender and expectation.",
         "poster": "/images/laurence.jpg"
     },
     {
@@ -29,7 +28,7 @@
         "title": "Chungking Express",
         "year": 1994,
         "director": "Wong Kar-Wai",
-        "plot": "Two lonely policemen in Hong Kong cross paths with a mysterious smuggler and a quirky snack bar worker, finding fleeting connections in the city’s restless nights.",
+        "plot": "Two lonely policemen in Hong Kong cross paths with a mysterious smuggler and a quirky snack bar worker, finding fleeting connections in the city’s restless nights. Amid neon lights and pop music, love and heartbreak flicker like passing moments, capturing the pulse of urban solitude.",
         "poster": "/images/chungking.jpg"
     },
     {
@@ -37,7 +36,7 @@
         "title": "Punch-Drunk Love",
         "year": 2002,
         "director": "Paul Thomas Anderson",
-        "plot": "A socially anxious man with a violent streak finds unexpected love while struggling against manipulation and his own bottled-up rage.",
+        "plot": "A socially anxious man with a violent streak finds unexpected love while struggling against manipulation and his own bottled-up rage. His fragile connection with a kind woman leads him toward emotional freedom, as chaos and tenderness collide in his search for calm.",
         "poster": "/images/punch-drunk.jpg"
     },
     {
@@ -45,7 +44,7 @@
         "title": "Pulse",
         "year": 2001,
         "director": "Kyoshi Kurosawa",
-        "plot": "Lonely strangers confront a mysterious force spreading through technology, blurring the line between the living and the dead.",
+        "plot": "Lonely strangers confront a mysterious force spreading through technology, blurring the line between the living and the dead. As the internet becomes a haunting gateway, fear and isolation consume Tokyo, revealing a chilling vision of humanity’s disconnection in the digital age.",
         "poster": "/images/Pulse.jpg"
     },
     {
@@ -53,7 +52,7 @@
         "title": "Barry Lyndon",
         "year": 1975,
         "director": "Stanley Kubrick",
-        "plot": "An ambitious Irishman schemes and fights his way through 18th-century Europe, rising into aristocracy before pride and misfortune lead to his downfall.",
+        "plot": "An ambitious Irishman schemes and fights his way through 18th-century Europe, rising into aristocracy before pride and misfortune lead to his downfall. His journey from charm to ruin unfolds in painterly splendor, exposing the vanity, cruelty, and emptiness of high society.",
         "poster": "/images/barry-lyndon-0-13-56.jpg"
     },
     {
@@ -61,7 +60,7 @@
         "title": "Nashville",
         "year": 1975,
         "director": "Robert Altman",
-        "plot": "Interwoven lives of musicians, politicians, and dreamers in 1970s Nashville paint a sprawling portrait of American ambition and disillusionment.",
+        "plot": "Interwoven lives of musicians, politicians, and dreamers in 1970s Nashville paint a sprawling portrait of American ambition and disillusionment. Through songs, scandals, and aspirations, the city becomes a stage for exploring fame, identity, and the cost of chasing the American dream.",
         "poster": "/images/Nashville-m.jpg"
     },
     {
@@ -69,7 +68,7 @@
         "title": "De Ofrivilliga",
         "year": 2008,
         "director": "Ruben Östlund",
-        "plot": "Ordinary people face escalating social tensions and moral dilemmas, exposing the darkly absurd side of human behavior.",
+        "plot": "Ordinary people face escalating social tensions and moral dilemmas, exposing the darkly absurd side of human behavior. Through interconnected vignettes, the film dissects conformity, shame, and the pressure to act correctly, revealing the fragility of group morality.",
         "poster": "/images/ofrig.jpg"
     },
     {
@@ -77,7 +76,7 @@
         "title": "The Godfather Part II",
         "year": 1974,
         "director": "Francis Ford Coppola",
-        "plot": "The rise of a young mobster parallels his son’s struggles to maintain power and family loyalty, revealing ambition, betrayal, and corruption.",
+        "plot": "The rise of a young mobster parallels his son’s struggles to maintain power and family loyalty, revealing ambition, betrayal, and corruption. As past and present intertwine, the story becomes a haunting exploration of legacy, sacrifice, and the consuming nature of power.",
         "poster": "/images/godfather2.jpg"
     }
 ]
