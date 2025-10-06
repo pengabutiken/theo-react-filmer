@@ -11,9 +11,12 @@ function Apiverision() {
           <span className=" text-purple-400">api</span>
         </h1>
         <div className="flex space-x-3 flex-shrink-0 justify-end">
-          <button className="px-3 py-1 text-sm sm:px-4 sm:py-2  font-prata rounded-lg bg-transparent   text-green-400  transition shadow-md whitespace-nowrap hover:bg-white/10">
-            Json
-          </button>
+          <Link
+  to="/"
+  className="px-3 py-1 text-sm sm:px-4 sm:py-2 font-prata rounded-lg bg-transparent text-green-400 transition shadow-md whitespace-nowrap hover:bg-white/10"
+>json
+  
+</Link>
           <button className="px-3 py-1 text-sm sm:px-4 sm:py-2 rounded-lg bg-transparent b text-red-300 font-prata transition shadow-md whitespace-nowrap hidden sm:inline-block hover:bg-white/10">
             Database
           </button>
