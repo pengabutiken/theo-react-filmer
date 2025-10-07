@@ -1,51 +1,49 @@
 import React, { useEffect, useState } from "react";
-
+import "./Css2.css";
 import { Link } from "react-router-dom";
 const options = {
-  method: 'GET',
+  method: "GET",
   headers: {
-    accept: 'application/json',
-    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyMzJkYjdkMmQ5NjAzMGU4OGZlNDhjZjQ0OTIwODk1MyIsIm5iZiI6MTcxNDY1MTc3My45MzEsInN1YiI6IjY2MzM4MjdkYzYxNmFjMDEyODE5M2NmZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.jtLAJrH3afnqvkIvOadb9v7exk5p_DzcwwhtDR2zyA4'
-  }
+    accept: "application/json",
+    Authorization:
+      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyMzJkYjdkMmQ5NjAzMGU4OGZlNDhjZjQ0OTIwODk1MyIsIm5iZiI6MTcxNDY1MTc3My45MzEsInN1YiI6IjY2MzM4MjdkYzYxNmFjMDEyODE5M2NmZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.jtLAJrH3afnqvkIvOadb9v7exk5p_DzcwwhtDR2zyA4",
+  },
 };
 
-const filmID=[
-    68722, //the master
-    11602,//såsom
-    110160,// laurnece
-    11104, // chungking
-    8051,// punch
-    27324,//pulse
-    3175,//barry
-    3121,//nashville
-    8927,//de ofrivilliga
-    240,//gudfadern
-]
+const filmID = [
+  68722, //the master
+  11602, //såsom
+  110160, // laurnece
+  11104, // chungking
+  8051, // punch
+  27324, //pulse
+  3175, //barry
+  3121, //nashville
+  8927, //de ofrivilliga
+  240, //gudfadern
+];
 
-  
 function Apiverision() {
-    const [movies, setMovie]=useState([]);
+  const [movies, setMovie] = useState([]);
 
+  filmID.forEach((element) => {
+    console.log(element);
+  });
 
-filmID.forEach(element => {
-    console.log(element)
-    
-    
-});
-    
-      useEffect(() => {
-  const promises = filmID.map(id => 
-      fetch(`https://api.themoviedb.org/3/movie/${id}`, options)
-        .then(res => res.json())
+  useEffect(() => {
+    const promises = filmID.map((id) =>
+      fetch(`https://api.themoviedb.org/3/movie/${id}?append_to_response=credits`, options).then((res) =>
+        res.json()
+      )
     );
 
     // Kör alla fetch parallellt
     Promise.all(promises)
-      .then(data => {
+      .then((data) => {
         console.log(data); // här ser du alla filmer
-        setMovie(data);   // sparar dem i state
+        setMovie(data); // sparar dem i state
       })
-      .catch(err => console.error(err));
+      .catch((err) => console.error(err));
   }, []);
   
 
@@ -69,12 +67,29 @@ filmID.forEach(element => {
         </div>
       </header>
       <div>
-        {movies.map(movie=>(
-            <h2 key={movie.id}>{movie.title}</h2>
+        {movies.map((movie, index) => (
+          <div key={movie.id} class="filmcontainer2">
+            <div class="titelbox2">
+              {" "}
+              <h2 class="titel2">
+                {" "}
+                {index + 1}. {movie.title} ({movie.release_date.slice(0, 4)}){" "}
+              </h2>
+            </div>
+               <img
+              src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+              alt={movie.title}
+              class="bild2"
+            />
+            <div class="plot2">
+            {movie.overview}
+            </div>
+            <div class="director2">
+                {movie.credits?.crew?.find(p => p.job === "Director")?.name || "Unknown"}
+            </div>
+          </div>
         ))}
-
       </div>
-      
     </div>
   );
 }
