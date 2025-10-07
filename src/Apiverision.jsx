@@ -26,6 +26,12 @@ const filmID=[
 function Apiverision() {
     const [movie, setMovie]=useState(null);
 
+
+filmID.forEach(element => {
+    console.log(element)
+    
+    
+});
       useEffect(() => {
     fetch('https://api.themoviedb.org/3/movie/8051', options)
       .then(res => res.json())
