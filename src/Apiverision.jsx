@@ -66,7 +66,7 @@ function Apiverision() {
           </button>
         </div>
       </header>
-      <div>
+      <div class="filmwrapper2">
         {movies.map((movie, index) => (
           <div key={movie.id} class="filmcontainer2">
             <div class="titelbox2">
@@ -85,7 +85,7 @@ function Apiverision() {
             {movie.overview}
             </div>
             <div class="director2">
-                {movie.credits?.crew?.find(p => p.job === "Director")?.name || "Unknown"}
+                {movie.credits?.crew?.find(p => p.job === "Director")?.name || ""}
             </div>
           </div>
         ))}

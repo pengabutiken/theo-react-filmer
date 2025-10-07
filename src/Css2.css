@@ -1,0 +1,27 @@
+body{
+    font-family: "Prata";
+   
+ 
+  
+}
+.filmwrapper2 {
+  display: flex;           
+  flex-wrap: wrap;         
+  gap: 20px;               
+  justify-content: center; 
+}
+
+.filmcontainer2{
+     display: flex;
+  flex-direction: column; 
+  border: 1px solid black;
+  width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+    
+
+}
+.bild2{
+    width: 300px;
+    height: 400px ;
+}
