@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./App.css";
+
 import { Link } from "react-router-dom";
 const options = {
   method: 'GET',
@@ -24,7 +24,7 @@ const filmID=[
 
   
 function Apiverision() {
-    const [movie, setMovie]=useState(null);
+    const [movies, setMovie]=useState([]);
 
 
 filmID.forEach(element => {
@@ -32,15 +32,22 @@ filmID.forEach(element => {
     
     
 });
+    
       useEffect(() => {
-    fetch('https://api.themoviedb.org/3/movie/8051', options)
-      .then(res => res.json())
-      .then(res => {
-        console.log(res); 
-        setMovie(res);    
+  const promises = filmID.map(id => 
+      fetch(`https://api.themoviedb.org/3/movie/${id}`, options)
+        .then(res => res.json())
+    );
+
+    // Kör alla fetch parallellt
+    Promise.all(promises)
+      .then(data => {
+        console.log(data); // här ser du alla filmer
+        setMovie(data);   // sparar dem i state
       })
       .catch(err => console.error(err));
   }, []);
+  
 
   return (
     <div className="min-h-screen bg-gray-100 font-sans">
@@ -61,7 +68,12 @@ filmID.forEach(element => {
           </button>
         </div>
       </header>
-      {movie ? <h1>{movie.title}</h1> : <p>Laddar...</p>}
+      <div>
+        {movies.map(movie=>(
+            <h2 key={movie.id}>{movie.title}</h2>
+        ))}
+
+      </div>
       
     </div>
   );
