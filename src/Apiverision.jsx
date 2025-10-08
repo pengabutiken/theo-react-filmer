@@ -20,7 +20,9 @@ const filmID = [
   3175, //barry
   3121, //nashville
   8927, //de ofrivilliga
-  240, //gudfadern
+  240,
+  2009,
+  614 //gudfadern
 ];
 
 function Apiverision() {
@@ -73,7 +75,7 @@ function Apiverision() {
               {" "}
               <h2 class="titel2">
                 {" "}
-                {index + 1}. {movie.title} ({movie.release_date.slice(0, 4)}){" "}
+                {index + 1}. {movie.title} <span class="span2">({movie.release_date.slice(0, 4)}){" "}</span>
               </h2>
             </div>
                <img
