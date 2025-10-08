@@ -22,7 +22,7 @@ const filmID = [
   8927, //de ofrivilliga
   240,
   2009,
-  614 //gudfadern
+  4995 //gudfadern
 ];
 
 function Apiverision() {
@@ -87,7 +87,7 @@ function Apiverision() {
             {movie.overview}
             </div>
             <div class="director2">
-                {movie.credits?.crew?.find(p => p.job === "Director")?.name || ""}
+               directed by {movie.credits?.crew?.find(p => p.job === "Director")?.name || ""}
             </div>
           </div>
         ))}

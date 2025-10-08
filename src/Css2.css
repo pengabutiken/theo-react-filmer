@@ -42,3 +42,10 @@ body{
     width: 300px;
     text-align: center;
 }
+.director2{
+        font-family: "Tangerine",serif;
+    font-style: oblique;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 900;
+}
