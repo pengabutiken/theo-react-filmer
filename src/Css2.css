@@ -49,3 +49,37 @@ body{
     text-align: center;
     font-weight: 900;
 }
+@media (max-width: 900px) {
+  .filmcontainer2 {
+    width: 45%;
+  }
+
+  .bild2 {
+    width: 100%;
+    height: auto;
+  }
+
+  .plot2 {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .filmcontainer2 {
+    width: 90%;
+  }
+
+  .titel2 {
+    font-size: 1.8em;
+  }
+
+  .director2 {
+    font-size: 1.5rem;
+  }
+
+  .bild2 {
+    width: 100%;
+    height: auto;
+  }
+}
