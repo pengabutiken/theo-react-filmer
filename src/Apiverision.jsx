@@ -61,7 +61,7 @@ function Apiverision() {
             to="/"
             className="px-3 py-1 text-sm sm:px-4 sm:py-2 font-prata rounded-lg bg-transparent text-green-400 transition shadow-md whitespace-nowrap hover:bg-white/10"
           >
-            json
+            Json
           </Link>
           <button className="px-3 py-1 text-sm sm:px-4 sm:py-2 rounded-lg bg-transparent b text-red-300 font-prata transition shadow-md whitespace-nowrap hidden sm:inline-block hover:bg-white/10">
             Database
@@ -75,7 +75,7 @@ function Apiverision() {
               {" "}
               <h2 class="titel2">
                 {" "}
-                {index + 1}. {movie.title} <span class="span2">({movie.release_date.slice(0, 4)}){" "}</span>
+                {index + 1}. {movie.title} <br></br><span>({movie.release_date.slice(0, 4)}){" "}</span>
               </h2>
             </div>
                <img
