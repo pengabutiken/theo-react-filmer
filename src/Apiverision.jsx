@@ -95,6 +95,56 @@ function Apiverision() {
           </div>
         ))}
       </div>
+      <footer className="bg-gradient-to-r from-gray-950 to-black text-white border-t border-gray-700 shadow-2xl p-6 sm:p-8 mt-10">
+        <div className="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between gap-6">
+          <div className="flex-1 text-center sm:text-center">
+            <h3 className="text-green-400 font-prata text-lg mb-2">Json</h3>
+            <p className="text-sm text-gray-300 font-prata">
+              Koden importerar filmdata från en JSON-fil och använder forEach
+              för att gå igenom varje film. För varje film skapas ett nytt
+              element som visar bild, titel, år, handling och regissör. Alla
+              dessa element läggs till i listan filmer, som sedan visas på
+              sidan. <br></br>
+              <br></br>
+              <i>
+                {" "}
+                <strong>Vad är meningen med denna webbplats?</strong>
+              </i>{" "}
+              <br></br>Den är rätt meningslös förutom att jag ville använda min fritid att öva på
+              lagra och läsa objekt, saker jag fått lära mig i plugget. Kul och arbeta med filmdata alltid. 
+            </p>
+          </div>
+
+          <div className="flex-1 text-center">
+            <h3 className="text-purple-400 font-prata text-lg mb-2">Api</h3>
+            <p className="text-sm text-gray-300 font-prata">
+              Koden använder useEffect för att köras när sidan laddas. Med fetch
+              hämtas data från TMDb-API för varje film-ID. Alla hämtningar
+              samlas med Promise.all, och resultatet sparas i movies med
+              setMovie. I returdelen används map för att gå igenom alla filmer
+              och visa titel, år, bild, handling och regissör.
+              <br></br><br></br>
+              <i> <strong> Vad har du använt för verktyg?</strong></i> <br></br>
+              React, Css, HTML, JS, Firebase, JSX, JSON, React Router, Fetch API/Promise, Tailwind (för header och footer)
+              
+            </p>
+          </div>
+
+          <div className="flex-1 text-center sm:text-center">
+            <h3 className="text-red-400 font-prata text-lg mb-2">Database</h3>
+            <p className="text-sm text-gray-300 font-prata">
+              Koden använder useEffect för att hämta filmdata från en
+              Firebase-databas jag själv har skapat med hjälp av getDocs och collection. Resultatet
+              lagras i statevariabeln movies via setMovies. Med map loopas alla
+              filmer igenom och varje film visas på sidan med titel, år, bild,
+              handling och regissör. <br></br><br></br>
+                <i> <strong> Kontakt</strong></i> <br></br>
+                Theo Björkqvist, theonils9@gmail.com
+
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
