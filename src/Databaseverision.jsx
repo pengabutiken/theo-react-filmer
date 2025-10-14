@@ -41,10 +41,10 @@ function Databaseverision(){
        <div className="movies-container">
       {movies.map((movie, index) => (
         <div key={movie.id} className="movie-card">
-          <h2 class="titel3">{index + 1}. {movie.titel} ({movie.year})</h2>
+          <h2 class="titel3">{index + 1}. {movie.titel} <i class="year3"> ({movie.year})</i></h2>
           <img  class="bild3" src={movie.bild  } alt={movie.title} width="200" />
           <p class="plot3">{movie.plot}</p>
-          <p><strong>Director:</strong> {movie.director}</p>
+          <p class="director3">directed by {movie.director}</p>
         </div>
       ))}
     </div>

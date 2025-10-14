@@ -9,7 +9,7 @@ function App() {
       <div class="filmcontainer">
         <img class="bild" alt="filmbild" key={film.id} src={film.poster}></img>
         <h2 class="titel" key={film.id}>
-          {film.id}. {film.title}, <i class="year">({film.year})</i>
+          {film.id}. {film.title} <i class="year">({film.year})</i>
         </h2>
         <p class="plot" key={film.id}>
           {film.plot}

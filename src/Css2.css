@@ -40,6 +40,8 @@ body{
     align-items: center;
     justify-content: center;
     padding-bottom: 10px;
+    border: 4px solid black;
+    border-bottom: none;
 }
 
 .plot2{
@@ -89,5 +91,6 @@ body{
   .bild2 {
     width: 100%;
     height: auto;
+    border:1px solid black;
   }
 }
