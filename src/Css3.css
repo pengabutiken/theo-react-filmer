@@ -1,90 +1,86 @@
-.body{
-    display: flex;
-    justify-content: center;
-    
+.body {
+  display: flex;
+  justify-content: center;
 }
 .movies-container {
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    gap: 2rem; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
-.titel3{
-    font-family: "Prata",serif;
-    font-size: 55px;
-    
+.titel3 {
+  font-family: "Prata", serif;
+  font-size: 55px;
 }
-.movie-card{
-    
-    width:75%;
-    justify-content: center;
-    padding: 30px;
-    border-bottom: solid 2px black;
+.movie-card {
+  width: 75%;
+  justify-content: center;
+  padding: 30px;
+  border-bottom: solid 2px black;
 }
-.bild3{
-    width: 100%;
-    height: 30rem;
-    border: inset 5px black;
+.bild3 {
+  width: 100%;
+  height: 30rem;
+  border: inset 5px black;
 }
-.plot3{
-    font-family: "Prata",serif;
-    font-size: 1.6rem;
-    text-align: center;
-    
+.plot3 {
+  font-family: "Prata", serif;
+  font-size: 1.6rem;
+  text-align: center;
 }
-.year3{
-    font-weight: 100;
-    font-style: oblique;
+.year3 {
+  font-weight: 100;
+  font-style: oblique;
 }
-.director3{
-    font-family: "Tangerine",serif;
-    text-align: end;
-    font-size:2rem;
-    font-weight: 700;
-    font-style: oblique;
-    padding: 15px;
+.director3 {
+  font-family: "Tangerine", serif;
+  text-align: end;
+  font-size: 2rem;
+  font-weight: 700;
+  font-style: oblique;
+  padding: 15px;
 }
 @media (max-width: 768px) {
-    .titel3 {
-        font-size: 35px;
-        text-align: center;
-    }
+  .titel3 {
+    font-size: 35px;
+    text-align: center;
+  }
 
-    .movie-card {
-        width: 90%;
-        padding: 15px;
-    }
+  .movie-card {
+    width: 90%;
+    padding: 15px;
+  }
 
-    .bild3 {
-        height: 20rem;
-    }
+  .bild3 {
+    height: 20rem;
+  }
 
-    .plot3 {
-        font-size: 1.2rem;
-        padding: 10px;
-    }
+  .plot3 {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
 
-    .director3 {
-        font-size: 1.5rem;
-        text-align: center;
-        padding: 5px;
-    }
+  .director3 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 5px;
+  }
 }
 
 @media (max-width: 480px) {
-    .titel3 {
-        font-size: 28px;
-    }
+  .titel3 {
+    font-size: 28px;
+  }
 
-    .bild3 {
-        height: 15rem;
-    }
+  .bild3 {
+    height: 15rem;
+  }
 
-    .plot3 {
-        font-size: 1rem;
-    }
+  .plot3 {
+    font-size: 1rem;
+  }
 
-    .director3 {
-        font-size: 1.2rem;
-    }
+  .director3 {
+    font-size: 1.2rem;
+  }
 }

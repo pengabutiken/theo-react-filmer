@@ -47,28 +47,44 @@ function App() {
 
       <div></div>
       <footer className="bg-gradient-to-r from-gray-950 to-black text-white border-t border-gray-700 shadow-2xl p-6 sm:p-8 mt-10">
-  <div className="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between gap-6">
-    
-    <div className="flex-1 text-center sm:text-left">
-      <h3 className="text-green-400 font-prata text-lg mb-2">json</h3>
-      <p className="text-sm text-gray-300">
-        This site showca
-      </p>
-    </div>
+        <div className="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between gap-6">
+          <div className="flex-1 text-center sm:text-left">
+            <h3 className="text-green-400 font-prata text-lg mb-2">json</h3>
+            <p className="text-sm text-gray-300 font-prata">
+              Koden importerar filmdata från en JSON-fil och använder forEach
+              för att gå igenom varje film. För varje film skapas ett nytt
+              element som visar bild, titel, år, handling och regissör. Alla
+              dessa element läggs till i listan filmer, som sedan visas på
+              sidan. <br></br>
+              <br></br>
+              <i>Vad är meningen med denna sida?</i> <br></br>Den är rätt
+              meningslös förutom att jag ville öva lite på lagra och läsa
+              objekt, saker jag fått lära mig i plugget.
+            </p>
+          </div>
 
-    <div className="flex-1 text-center">
-      <h3 className="text-green-400 font-prata text-lg mb-2">Contact</h3>
-      <p className="text-sm text-gray-300">Email: theo@example.com</p>
-      <p className="text-sm text-gray-300">Instagram: @theosmovies</p>
-    </div>
+          <div className="flex-1 text-center">
+            <h3 className="text-purple-400 font-prata text-lg mb-2">Api</h3>
+            <p className="text-sm text-gray-300">
+              Koden använder useEffect för att köra när sidan laddas. Med fetch
+              hämtas data från TMDb-API för varje film-ID. Alla hämtningar
+              samlas med Promise.all, och resultatet sparas i movies med
+              setMovie. I returdelen används map för att gå igenom alla filmer
+              och visa titel, år, bild, handling och regissör.
+            </p>
+          </div>
 
-    <div className="flex-1 text-center sm:text-right">
-      <h3 className="text-green-400 font-prata text-lg mb-2">More Info</h3>
-      <p className="text-sm text-gray-300">Made with React + Firebase</p>
-      <p className="text-sm text-gray-300">© 2025 Theo’s Movie Database</p>
-    </div>
-  </div>
-</footer>
+          <div className="flex-1 text-center sm:text-right">
+            <h3 className="text-green-400 font-prata text-lg mb-2">
+              More Info
+            </h3>
+            <p className="text-sm text-gray-300">Made with React + Firebase</p>
+            <p className="text-sm text-gray-300">
+              © 2025 Theo’s Movie Database
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }

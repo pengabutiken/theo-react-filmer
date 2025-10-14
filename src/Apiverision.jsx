@@ -22,7 +22,7 @@ const filmID = [
   8927, //de ofrivilliga
   240,
   2009,
-  1054867 //gudfadern
+  1054867, //gudfadern
 ];
 
 function Apiverision() {
@@ -34,20 +34,19 @@ function Apiverision() {
 
   useEffect(() => {
     const promises = filmID.map((id) =>
-      fetch(`https://api.themoviedb.org/3/movie/${id}?append_to_response=credits`, options).then((res) =>
-        res.json()
-      )
+      fetch(
+        `https://api.themoviedb.org/3/movie/${id}?append_to_response=credits`,
+        options
+      ).then((res) => res.json())
     );
 
-    // Kör alla fetch parallellt
     Promise.all(promises)
       .then((data) => {
-        console.log(data); // här ser du alla filmer
-        setMovie(data); // sparar dem i state
+        console.log(data);
+        setMovie(data);
       })
       .catch((err) => console.error(err));
   }, []);
-  
 
   return (
     <div className="min-h-screen bg-gray-100 font-sans">
@@ -63,7 +62,7 @@ function Apiverision() {
           >
             Json
           </Link>
-           <Link
+          <Link
             to="/DB"
             className="px-3 py-1 text-sm sm:px-4 sm:py-2 font-prata rounded-lg bg-transparent text-red-400 transition shadow-md whitespace-nowrap hover:bg-white/10"
           >
@@ -78,19 +77,20 @@ function Apiverision() {
               {" "}
               <h2 class="titel2">
                 {" "}
-                {index + 1}. {movie.title} <br></br><span>({movie.release_date.slice(0, 4)}){" "}</span>
+                {index + 1}. {movie.title} <br></br>
+                <span>({movie.release_date.slice(0, 4)}) </span>
               </h2>
             </div>
-               <img
+            <img
               src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
               alt={movie.title}
               class="bild2"
             />
-            <div class="plot2">
-            {movie.overview}
-            </div>
+            <div class="plot2">{movie.overview}</div>
             <div class="director2">
-               directed by {movie.credits?.crew?.find(p => p.job === "Director")?.name || ""}
+              directed by{" "}
+              {movie.credits?.crew?.find((p) => p.job === "Director")?.name ||
+                ""}
             </div>
           </div>
         ))}
