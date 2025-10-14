@@ -7,10 +7,12 @@
 .titel{  
     font-family: "Prata", serif;
     font-size:3.5rem;
+    padding: 40px;
 }
 .plot {
       font-family: "Prata", serif;
     font-size: 1.3rem;
+    padding:20px;
 }
 .director{
     font-family: "Tangerine",serif;

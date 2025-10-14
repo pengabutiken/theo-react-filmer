@@ -2,14 +2,15 @@ import React, { useEffect, useState } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "./firebase";
 import { Link } from "react-router-dom";
+import "./Css3.css";
 
 function Databaseverision(){
     const [movies, setMovies] = useState([]);
 
   useEffect(() => {
     async function fetchMovies() {
-      const querySnapshot = await getDocs(collection(db, "filmer")); 
-      const movieList = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+      const getFilmer = await getDocs(collection(db, "filmer")); 
+      const movieList = getFilmer.docs.map(doc => ({ id: doc.id, ...doc.data() }));
       setMovies(movieList);
     }
     fetchMovies();
@@ -40,9 +41,9 @@ function Databaseverision(){
        <div className="movies-container">
       {movies.map((movie, index) => (
         <div key={movie.id} className="movie-card">
-          <h2>{index + 1}. {movie.titel} ({movie.year})</h2>
-          <img src={movie.bild  } alt={movie.title} width="200" />
-          <p>{movie.plot}</p>
+          <h2 class="titel3">{index + 1}. {movie.titel} ({movie.year})</h2>
+          <img  class="bild3" src={movie.bild  } alt={movie.title} width="200" />
+          <p class="plot3">{movie.plot}</p>
           <p><strong>Director:</strong> {movie.director}</p>
         </div>
       ))}
